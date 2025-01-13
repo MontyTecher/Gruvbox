@@ -1,0 +1,81 @@
+:root{
+    font-family: Poppins;
+    --bg: #282828;
+    --bg0_h: #1d2021;
+    --text: #ebdbb2;
+    --red:#fb4934;
+    --green:#b8bb26;
+    --yellow:#fabd2f;
+    --blue:#83a598;
+    --purple:#d3869b;
+}
+a{
+    color: var(--text);
+    text-decoration-line: none;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+body{
+    position:relative;
+    padding:0;
+    margin:0;
+    color: var(--text);
+    background-color: var(--bg);
+}
+.navbar{
+    font-size:1.5rem;
+    background-color: var(--bg0_h);
+    height:2.5rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.main{
+    margin:auto;
+    margin-top:1.6rem;
+    display:flex;
+}
+.main-text{
+    font-size:2rem;
+    width:50%;
+    background-color: var(--bg0_h);
+    border-radius: 10px;
+    margin-left:2rem;
+    margin-right:1rem;
+}
+.title-container{
+    display:flex;
+    justify-content: center;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg0_h);
+    color:var(--text);
+    text-align: center;
+}
+.button-container{
+    display: flex;
+    flex-direction:column;
+    font-size:2rem;
+    width:50%;
+    border-radius: 10px;
+    margin-left:1rem;
+    margin-right:2rem;
+}
+#colors{
+    background-color: var(--red);
+}
+#github{
+    background-color: var(--green);
+}
+#showcase{
+    background-color: var(--blue);
+}
+#contact{
+    background-color: var(--yellow);
+}
