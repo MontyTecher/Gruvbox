@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gruvbox</title>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
     <div class="navbar">
-        <div class="brand">
-            <a href="#">Gruvbox</a>
-        </div>
-        <div class="nav-items">
-            <a href="#">Homepage</a>
-            <a href="#">About</a>
-        </div>
+      <div class="brand">
+        <a href="#">Gruvbox</a>
+      </div>
+      <div class="nav-items">
+        <a href="#">Homepage</a>
+        <a href="#" id="about">About</a>
+      </div>
+    </div>
+    <div class="about-dropdown">
+      <h1>I am Marcelo and I am the <span id="coolest">COOLEST!!</span></h1>
     </div>
     <div class="main">
-        <div class="main-text">
-            <p>The best color scheme, compatable with all of your favorite programs!</p>
-        </div>
-        <div class="button-container">
-            <a href="#colors" id="colors">Colors</a>
-            <a href="https://github.com/morhetz/gruvbox" id="github">Github</a>
-            <a href="#showcase" id="showcase">Showcase</a>
-            <a href="#" id="contact">Contact</a>
-        </div>     
+      <div class="main-text">
+        <p>
+          The best color scheme, compatable with all of your favorite programs!
+        </p>
+      </div>
+      <div class="button-container">
+        <a href="#colors" id="colors">Colors</a>
+        <a href="https://github.com/morhetz/gruvbox" id="github">Github</a>
+        <a href="#showcase" id="showcase">Showcase</a>
+        <a href="#" id="contact">Contact</a>
+      </div>
     </div>
     <div class="title-container">
-        <h1 class="title">Colors</h1>
+      <h1 class="title">Colors</h1>
     </div>
     <div class="colorscheme-container">
-        <img class="colorscheme" src="images/dark_mode.png">
-        <img class="colorscheme" src="images/light_mode.png">
+      <img class="colorscheme" src="images/dark_mode.png" />
+      <img class="colorscheme" src="images/light_mode.png" />
     </div>
 
     <div class="title-container">
-        <h1 class="title">Showcase</h1>
+      <h1 class="title">Showcase</h1>
     </div>
-    
+    <div id="showcase-container">
+      <img class="showcase-image" src="images/arch.png" />
+      <img class="showcase-image" src="images/fedora.png" />
+      <img class="showcase-image" src="images/freebsd.png" alt="" />
+    </div>
+
     <footer>
-        <p>This is, in fact, the bottom of the page. <a href="#">TOP?</a></p>
+      <p>This is, in fact, the bottom of the page. <a href="#">TOP?</a></p>
     </footer>
-</body>
+    <script>
+      const dropdownDiv = document.querySelector(".about-dropdown");
+      const about = document.querySelector("#about");
+      about.addEventListener("click", () => {
+        dropdownDiv.classList.toggle("reveal");
+      });
+      document.getElementById("contact").addEventListener("click", () => {
+        alert("m.silva600@montytech.net");
+      });
+    </script>
+  </body>
 </html>
